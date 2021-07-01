@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* body{
+    font-family: 'Roboto', sans-serif;
+} */
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: -120px;
+    z-index: 2;
+}
+
+header .sup{
+    background: #D1891C;
+    height: 35px;
+    padding: 7px 0 16px 28px;
+    font-size: 18px;    
+}
+
+header .sub{
+    height: 85px;
+    background: #00669F;
+    padding: 15px 0 45px 28px;
+    font-size: 25px;    
+}
+
+main{
+    background: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+section.dc {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    
+}
+
+.card{
+    
+    width: 25vw;
+    height: 45vw;
+    background: pink;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-radius: 20px 20px 5px 5px;
+}
+.cover{
+    height: 35%;
+    display: block;  
+    background-color: cyan;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.corazon{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 50px;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 120px;
+    width:120px;
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: -5%;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+
+.description{
+    height: 65%;
+    display: block;  
+    background-color: #F3F3F3;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    padding: 18% 10% 10% 10%;
+}
+.description h1{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.description p{
+    text-align: left;
+    margin-bottom: 15%;
+    margin-top: 20px;
+    height: 50%;
+    font-size: 1vw;
+}
+
+.description button{
+    background-color: #00669F;
+    color:#F3F3F3;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+.cover.batman{
+    background-image: url(../img/baticueva.png);
+}
+.cover.harley{
+    background-image: url(../img/crazyprint.png);
+}
+.cover.wonder{
+    background-image: url(../img/planetaWW.png)
+}
+.cover.superman{
+    background-image: url(../img/kripton.png);
+}
+
+
+
+.avatar.batman{
+    background-image: url(../img/batman.png);
+}
+.avatar.harley{
+    background-image: url(../img/harley.png);
+}
+.avatar.wonder{
+    background-image: url(../img/mujer.png);
+}
+.avatar.superman{
+    background-image: url(../img/superM.png);
+}
+
+
+footer{
+    position: relative;
+    background: #00669F;
+    color: white;
+    padding: 10px 0 10px 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img{
+    height: 30px;
+    margin-right: 20px;
+}
+footer p{
+    margin-left: 20px;
+}
+
+
+
+/* estilo para tablets */
+@media (max-width: 760px){
+    
+    section.dc{
+        width: 100%;
+    }
+    .card{
+        width: 45vw;
+        height: 72vw;
+    }
+
+    .avatar{
+        margin-left: 13vw;
+        margin-top: -10%;
+        height: 105px;
+        width: 105px;
+    }
+
+    .description h1{
+        
+        font-size: 20px;
+        
+    }
+    
+    .description p{
+        
+        font-size: 10px;
+    }
+
+}
+
+/* estilo para moviles */
+@media (max-width: 420px){
+    section.dc{
+        width: 100%;
+    }
+    .card{
+        width: 72vw;
+        height: 106vw;
+    }
+
+    .card.harley{
+        display: none;
+    }
+    .avatar{
+        margin-left: 22vw;
+        margin-top: -15%;
+        height: 110px;
+        width: 110px;
+    }
+
+    footer{
+        
+        justify-content: center;
+        
+    }
+    footer img{
+        height: 30px;
+        margin: 20px;
+    }
+    footer p{
+        margin: 20px 0 0 0 ;
+    }
+}
